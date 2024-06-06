@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <style>
+    * {
+      font-size: 1.5rem;
+      box-sizing: border-box;
+
+    }
+
+    .buty {
+      width: 196px;
+      height: 17%;
+      padding-top: 12px;
+      padding-bottom: 6px;
+      margin-top: 4px;
+      background-color: #26355D;
+      font-size: xx-large;
+      border-radius: 13px;
+      border: 4px solid black;
+    }
+
+    button {
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    }
+
+    .buty1 {
+      width: 400px;
+      height: 17%;
+      padding-top: 12px;
+      padding-bottom: 6px;
+      margin-top: 4px;
+      background-color: #26355D;
+      font-size: xx-large;
+      border-radius: 13px;
+      border: 2px solid black;
+      box-shadow: ;
+    }
+
+    .flex {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      position: relative;
+    }
+
+    div.left {
+
+      width: 50%;
+      padding: 15px;
+      /* position: fixed; */
+    }
+
+    .left img {
+      width: 500px;
+      height: 479px;
+      position: sticky;
+      top: 0%;
+    }
+
+    map area {
+      cursor: pointer;
+    }
+
+    /* .right {
+      float: right;
+      padding: 15px;
+
+      width: 50%;
+      padding-right: 280px;
+
+
+    } */
+    /* 
+     @media screen and (max-width:800px) {
+
+      .right,
+      .buty {
+        width: 100%;
+      }
+    } */
+
+    table {
+      margin-right: 60%;
+      width: 500px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1 style="text-align: center; background-color: #26355D; margin-top: 0%;
+  position:relative;
+  height: 55px; padding: 12px;">MAGIC SQUARE OF NUMELOGY 3 FOR PISCES</h1>
+
+  <p>Click on any field of the array</p>
+  <div class="flex">
+    <div class="right">
+      <p id="output"></p>
+
+
+      <p>
+        <th><b>Instructions for Verifying the Magic Square of Numerology 3</b></th>
+      </p>
+
+      <p>Welcome to the Numerology 3 Magic Square verification.<br> This special magic square is designed to ensure that
+        the sum of the digits in any row, column, or diagonal always equals 3. Let's verify if the Numerology 3 Magic
+        Square is working correctly:</p>
+
+      <p>1. <b>Background</b>: This magic square is associated with Numerology 3, which means that the sum of the digits
+        in any row, column, or diagonal must always equal 3. For example, if the sum is 381, you would calculate it as 3
+        +
+        8 + 1 = 12 and then 1 + 2 = 3.</p>
+
+      <p><b>Verification</b>: We will now verify if the Numerology 3 Magic Square works correctly, especially in the
+        context of someone born under the Pisces sign with Numerology number 3. To do this, we will interact with a 4x4
+        array of numbers.</p>
+
+      <p>3. <b>Array Interaction</b>: In the array, you will find a set of numbers. You are only required to select and
+        add four numbers together.</p>
+
+      <p>4. <b>Validation</b>: After selecting and adding the four numbers, calculate the sum of their digits. Ensure
+        that
+        the final result is always equal to 3. If it does, then the Numerology 3 Magic Square is working correctly for
+        the
+        given input.</p>
+
+      <p> <b>Pisces Numerology 3 Verification</b>: If you are born under the Pisces sign with a Numerology number of 3,
+        this verification will help ensure that the magic square aligns with your Numerology traits.</p>
+
+      <p>6. <b>Proceed</b>: To begin the verification process, simply click on any four numbers in the array, and
+        perform
+        the calculations as described. If the sum of the digits is always 3, the magic square is confirmed to be
+        functioning correctly.</p>
+
+      <p>7. <b>Conclusion</b>: If the magic square consistently yields a digit sum of 3 for your selections, you can be
+        confident that it adheres to the principles of Numerology 3 and is working as intended.</p>
+
+      Remember to explore the array and select your numbers to test the magic square's properties. Enjoy the
+      exploration!
+
+    </div>
+
+    <div class="left">
+      <img src="./nu3nzela.jpeg" usemap="#kanda"><br>
+      <button style="" class="buty" onclick="
+      clicli +='+';
+      console.log(clicli);
+      document.getElementById('output').innerHTML = clicli;
+      ">Add</button>
+
+      <button style=" " class="buty" onclick="
+      clicli ='';
+      console.log(clicli);
+      document.getElementById('output').innerHTML = clicli;
+      ">Reset</button>
+
+      <br>
+
+      <button class="buty1" onclick="
+    //sum =magic[0].w + magic[0].x + magic[0].y + magic[0].z;
+    if(clicli.length == 11||clicli.length == 10||clicli.length == 9){
+      sum = eval(clicli);
+    console.log(sum);
+    magic.gu=function(sum){
+      //let sum=138;
+      let x=sum/100; 
+      let z=Math.floor(x); 
+      let reminder=x-z;
+      let p=reminder*10; 
+      let zp=Math.floor(p); 
+      let k=p-zp;
+      let zk=k*10; 
+      let srcNm=zk+zp+z; 
+      let numelogy=Math.round(srcNm);
+      //return numelogy;
+      //hano reka nkore uko izajya ikomerezaho 12=1+2=3; 38=3+3=11=1+1=2;
+      if (numelogy>10){
+          let j1= numelogy/10;
+          let j2= Math.floor(j1);
+          let j3=j1-j2;
+          let j4=j3*10;
+          let j5=j4+j2;
+          let finalMagic= Math.round(j5);
+          if(finalMagic<10){
+              return finalMagic;
+          }
+          else{
+              let k1= finalMagic/10;
+          let k2= Math.floor(k1);
+          let k3=k1-k2;
+          let k4=k3*10;
+          let k5=k4+k2;
+          let finalMagicK= Math.round(k5);
+          return finalMagicK;
+          }
+  
+      }
+      else return numelogy;
+      
+      };
+      //let dupange=numelogy;
+    document.getElementById('output').innerHTML = `${clicli} = ${sum} = ${magic.gu(sum)}`;
+    clicli ='';
+      
+    }
+    else{
+      clicli ='';
+      console.log(clicli);
+      document.getElementById('output').innerHTML = `${console.error(sum)} MATH ERROR!
+      retry again!!!!!`
+    }
+    
+    ">Equals</button>
+
+
+      <map name="kanda">
+        <area shape="rect" coords="200,200,176,220" alt="17" onclick=" 
+          clicli +='17';
+          magic[0].w = 17;
+          console.log(clicli);
+          document.getElementById('output').innerHTML = clicli;
+          ">
+
+        <area shape="rect" coords="300,200,114,253" alt="99" onclick=" 
+          clicli +='99';
+          magic[0].x = 99;
+          console.log(clicli);
+          document.getElementById('output').innerHTML = clicli;">
+
+        <!-- <area shape="rect" coords="180,158,230,166" alt="3" onclick=" clicli +='3';
+          magic[0].y = 3;
+          console.log(clicli);
+          document.getElementById('output').innerHTML = clicli;"> -->
+
+        <!-- <area shape="rect" coords="270,158,250,176" alt="19" onclick=" clicli +='19';
+          magic[0].z = 19;
+          console.log(clicli);
+          document.getElementById('output').innerHTML = clicli;"> -->
+
+        <!--hano ngiye gukora izindi area zo gu click ho 
+            maze magic yose ibe interactive-->
+
+        <!-- <area shape="rect" coords="149, 190, 162, 180" alt="4" onclick=" 
+            clicli +='4';
+            magic[0].w = 4;
+            console.log(clicli);
+            document.getElementById('output').innerHTML = clicli;"> -->
+        <!--coords zaha nzifashe gi pro-->
+
+        <!-- <area shape="rect" coords="175, 190, 200, 180" alt="18" onclick=" 
+            clicli +='18';
+            magic[0].w = 18;
+            console.log(clicli);
+            document.getElementById('output').innerHTML = clicli;"> -->
+
+        <!-- <area shape="rect" coords="211, 190, 235, 180" alt="33" onclick=" 
+            clicli +='33';
+            magic[0].w = 33;
+            console.log(clicli);
+            document.getElementById('output').innerHTML = clicli;"> -->
+
+        <!-- <area shape="rect" coords="247, 190, 270, 180" alt="83" onclick=" 
+            clicli +='83';
+            magic[0].w = 83;
+            console.log(clicli);
+            document.getElementById('output').innerHTML = clicli;"> -->
+        <!--raw2 irarangiye tugiye kuya 3-->
+
+        <!-- <area shape="rect" coords="149, 210, 162, 198" alt="27" onclick=" 
+            clicli +='27';
+            magic[0].w = 27;
+            console.log(clicli);
+            document.getElementById('output').innerHTML = clicli;"> -->
+
+        <!-- <area shape="rect" coords="175, 210, 200, 198" alt="5" onclick=" 
+            clicli +='5';
+            magic[0].w = 5;
+            console.log(clicli);
+            document.getElementById('output').innerHTML = clicli;"> -->
+
+        <!-- <area shape="rect" coords="211, 210, 235, 198" alt="91" onclick=" 
+            clicli +='91';
+            magic[0].w = 91;
+            console.log(clicli);
+            document.getElementById('output').innerHTML = clicli;"> -->
+
+        <!-- <area shape="rect" coords="247, 210, 270, 198" alt="15" onclick=" 
+            clicli +='15';
+            magic[0].w = 15;
+            console.log(clicli);
+            document.getElementById('output').innerHTML = clicli;"> -->
+        <!--raw3 irarangiye tugiye kuya 4-->
+
+        <!-- <area shape="rect" coords="149, 230, 162, 216" alt="90" onclick=" 
+            clicli +='90';
+            magic[0].w = 90;
+            console.log(clicli);
+            document.getElementById('output').innerHTML = clicli;"> -->
+
+        <!-- <area shape="rect" coords="175, 230, 200, 216" alt="16" onclick=" 
+            clicli +='16';
+            magic[0].w = 16;
+            console.log(clicli);
+            document.getElementById('output').innerHTML = clicli;"> -->
+
+        <!-- <area shape="rect" coords="211, 230, 235, 216" alt="11" onclick=" 
+            clicli +='11';
+            magic[0].w = 11;
+            console.log(clicli);
+            document.getElementById('output').innerHTML = clicli;"> -->
+
+        <!-- <area shape="rect" coords="247, 230, 270, 216" alt="21" onclick=" 
+            clicli +='21';
+            magic[0].w = 21;
+            console.log(clicli);
+            document.getElementById('output').innerHTML = clicli;"> -->
+
+
+
+      </map>
+    </div>
+
+  </div>
+
+
+  <script>
+    let clicli = '';
+    let magic = [{ w: 0, x: 0, y: 0, z: 0 }];
+    let sum;
+
+    //for loop to generate a summation of any row column,median
+
+
+
+
+
+
+  </script>
+
+</body>
+
+</html>
